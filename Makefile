@@ -10,7 +10,8 @@ PATH_INCLUDES := ./includes
 
 BIN := ./$(NAME)
 
-SRC := $(PATH_SRC)/test.c
+SRC := $(PATH_SRC)/test.c \
+		$(PATH_SRC)/pipex.c
 
 OBJ := $(subst .c,.o,$(subst $(PATH_SRC), $(PATH_OBJ), $(SRC)))
 
